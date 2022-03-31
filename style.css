@@ -1,0 +1,392 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background: rgb(24, 24, 24);
+}
+/* ----------------- login/signup page --------------------- */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.box {
+  background: rgba(0, 122, 143, 0.24);
+  width: 200px;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: rgb(59, 216, 255) 0px 0px 16px -1px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  height: 100%;
+  text-align: center;
+  padding: 5px;
+}
+ input {
+  border: none;
+  height: 30px;
+  width: 90%;
+  margin: 5px 0px;
+  background: rgba(255, 255, 255, 0.068);
+  border-radius: 10px;
+  padding: 4px;
+  color: beige;
+  outline: none;
+  transition: 1s;
+  position: relative;
+}
+
+#submit,
+button {
+  cursor: pointer;
+  transition: 0.6s;
+}
+
+#submit,
+button:hover {
+  box-shadow: white inset 0px -50px 0px 1px;
+  color: rgb(53, 53, 53);
+}
+.signup,
+.login,
+#gender {
+  text-align: center;
+  border: none;
+  height: 30px;
+  width: 90%;
+  margin: 5px 0px;
+  background: rgba(255, 255, 255, 0.068);
+  border-radius: 10px;
+  padding: 4px;
+  color: rgb(0, 177, 201);
+  outline: none;
+  transition: 1s;
+  position: relative;
+}
+.or {
+  color: wheat;
+}
+
+/* ----------------- users --------------- */
+.userhouse {
+}
+.userroom {
+}
+.header {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header p {
+  color: rgb(221, 221, 221);
+  font-weight: 600;
+  font-size: 1.9rem;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.userbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+a {
+  text-decoration: none;
+}
+.userunit {
+  position: relative;
+  padding: 10px 5px;
+  width: 150px;
+  height: 180px;
+  text-align: center;
+  background: rgb(31, 31, 31);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px;
+  transition: 0.5s;
+  box-shadow: rgba(122, 255, 222, 0.479) -5px -5px 5px -1px;
+}
+.userunit:hover {
+  background: rgba(31, 255, 236, 0.479);
+  box-shadow: rgba(122, 255, 222, 0.479) 0px 0px 0px -1px;
+  transform: translate(-5px, -5px);
+}
+.userunit::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: 0.4s;
+}
+
+.userunit img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.userunit p {
+  color: rgb(190, 190, 190);
+  font-weight: 600;
+}
+
+/* -------------------- Chat Box ---------------- */
+/* -----head------ */
+.chatfactory {
+  background: rgb(5, 25, 31);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.chathouse {
+  height: 500px;
+  width: 350px;
+  border-radius: 10px;
+}
+.chathead {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 10%;
+
+  padding: 5px 0px;
+}
+.back {
+  height: 100%;
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.back a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.back img {
+  width: 60%;
+  color: aliceblue;
+}
+.receiver {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  padding: 3px;
+  align-items: center;
+}
+
+.receiver img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+  padding: 0px 5px;
+}
+.receiver p {
+  color: rgb(124, 183, 185);
+  position: relative;
+  letter-spacing: 1px;
+}
+.receiver p::before {
+  content: "";
+  position: absolute;
+  background: rgba(255, 255, 255, 0.948);
+  width: 0%;
+  height: 1px;
+  top: 19px;
+  left: 0;
+  transition: 0.5s;
+}
+.receiver p:hover:before {
+  width: 100%;
+}
+.space1 {
+  width: 25%;
+  height: 100%;
+}
+
+/* ------chats------ */
+
+.chatroom {
+  height: 78%;
+  overflow: auto;
+  padding: 0px 5px;
+  border: 1px solid rgb(0, 56, 89);
+  border-radius: 10px;
+}
+.chatroom::-webkit-scrollbar {
+  background: #000;
+  width: 0px;
+}
+.chatunit {
+  padding: 3px;
+}
+.chatbox {
+  margin: 10px 0px;
+  display: flex;
+  flex-direction: column;
+  padding: 3px;
+}
+.right {
+  align-items: flex-end;
+}
+.right .mainchat {
+
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 0px;
+  background: rgb(51, 0, 140);
+}
+.left {
+}
+.chattime {
+  margin-bottom: 10px;
+  text-align: center;
+  width: 100%;
+  color: rgb(106, 133, 128);
+  display: none;
+}
+.mainchat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: rgb(143, 0, 124);
+  width: max-content;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  max-width: 300px;
+  padding: 0px;
+  height: min-content;
+}
+.msg {
+  padding: 5px;
+  color: rgb(142, 172, 175);
+  letter-spacing: 0.3px;
+  word-break: break;
+  word-break: break;
+}
+.mainchat .image{
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainchat .image img{
+  width:100%;
+  height: 98%;
+  display: none;
+}
+
+/* -------sender------ */
+
+.chatsender {
+  height: 10%;
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 5px;
+  width: 100%;
+}
+.chatsender form {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+#file {
+  transition: none;
+  width: 40px;
+  cursor: pointer;
+
+}
+#file::before{
+  content: "Img";
+  position: absolute;
+  color: rgb(26, 26, 26);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: none;
+  background: rgb(216, 216, 216);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 1px;
+  font-weight: 900;
+}
+.chatsender form textarea {
+  width: 80%;
+  border: none;
+  border-radius: 15px;
+  transition: none;
+  margin-right: 8px;
+  resize: none;
+  outline: none;
+  color: rgb(230, 220, 209);
+  padding: 6px;
+  font-size: 1.1rem;
+  background: rgba(255, 255, 255, 0.126);
+}
+.chatsender form .send {
+  cursor: pointer;
+}
+.chatsender form .send img{
+}
+
+/* -------------- Responsive --------------- */
+@media screen and (max-width: 422px) {
+  body {
+    background: rgb(41, 41, 41);
+  }
+
+  .box {
+    height: 90%;
+    width: 93%;
+    display: flex;
+    justify-content: center;
+    box-shadow: none;
+    border-radius: 0px;
+  }
+  form {
+    width: 90%;
+    height: max-content;
+  }
+  input {
+    background: rgb(206, 206, 206);
+    color: #000;
+    margin: 10px;
+    width: 99%;
+    box-shadow: rgb(41, 41, 41) 1px 1px 4px 0px;
+  }
+  #submit {
+    color: rgb(41, 41, 41);
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 100%;
+    margin-top: 20px;
+  }
+  .signup,
+  .login {
+    width: 90%;
+  }
+}
